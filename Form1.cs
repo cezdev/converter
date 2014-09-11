@@ -19,7 +19,10 @@ namespace Converter
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            label1.Text = textBox1.Text;
+            int Invoer = Convert.ToInt32(textBox1.Text);
+            label1.Text = (Invoer * 1.852).ToString();
+            label2.Text = (Invoer / 1.852 * 3281).ToString("0.00");
         }
     }
 }
